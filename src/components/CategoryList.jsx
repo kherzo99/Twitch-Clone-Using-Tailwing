@@ -50,11 +50,17 @@ const games = [
     viewers: "264.4K espectadores",
     category: "Shooter en primera persona",
   },
+  {
+    img: "https://static-cdn.jtvnw.net/ttv-boxart/491487-285x380.jpg",
+    name: "Dead by Daylight",
+    viewers: "21.8K espectadores",
+    category: "Accion",
+  },
 ];
 
 export default function CategoryList() {
   return (
-    <main className="flex flex-grow p-8 gap-5">
+    <main className="grid grid-rows-3 grid-flow-col max-w-905px p-8 gap-5">
       {games.map((game) => {
         return (
           <CategoryCard
